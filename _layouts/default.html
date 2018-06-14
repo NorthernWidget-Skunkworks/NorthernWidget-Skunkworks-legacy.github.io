@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
+
 {% seo %}
   </head>
 
@@ -13,12 +14,14 @@
 
     <header>
       <div class="container">
+        <img src="{{site.url}}/assets/images/Logo_Boarder.jpg" width="15%" alt="Smiley face" style="float:right">
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-
         <a href="{{site.url}}" class="btn">Home</a>
         <a href="http://www.northernwidget.com/" class="btn">Northern Widget LLC</a>
         <a href="https://github.com/NorthernWidget-Skunkworks" class="btn btn-github"><span class="icon"></span>Skunkworks on GitHub</a>
+        
+
         <section id="downloads">
           {% if site.show_downloads %}
             <a href="{{ site.github.zip_url }}" class="btn">Download as .zip</a>
